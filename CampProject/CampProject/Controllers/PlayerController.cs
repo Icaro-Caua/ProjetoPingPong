@@ -19,12 +19,7 @@ namespace CampProject.Controllers
         // SET: Player/Create
         public string SetName(string playerName)
         {
-            if (playerName == string.Empty) {
-                return ExceptionContext(ModelError);
-            }
-            else (playerName != string.Empty){
-                return SetName();
-            }
+            return playerName;
         }
 
         // POST: Player/Create
