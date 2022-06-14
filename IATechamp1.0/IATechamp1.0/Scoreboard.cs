@@ -10,10 +10,14 @@
 
         public int GamePoints { get; set; }
 
-        public Scoreboard(int setPoints, int playerPoints, int gamePoints)
+        public Scoreboard(int setPoints, int gamePoints)
         {
             SetPoints = setPoints;
             GamePoints = gamePoints;
+        }
+
+        public Scoreboard(int playerPoints)
+        {
             PlayerPoints = playerPoints;
         }
     }
